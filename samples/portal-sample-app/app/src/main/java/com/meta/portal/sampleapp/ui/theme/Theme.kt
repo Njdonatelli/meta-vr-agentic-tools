@@ -17,33 +17,31 @@ import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
-private val LightColorScheme =
-    lightColorScheme(
-        primary = MetaBlue,
-        onPrimary = OnMetaBlue,
-        primaryContainer = MetaBlueLight,
-        onPrimaryContainer = OnMetaBlueLight,
-        secondary = NeutralGrey,
-        onSecondary = OnMetaBlue,
-        background = BackgroundLight,
-        surface = SurfaceLight,
-        onBackground = ContentOnLight,
-        onSurface = ContentOnLight,
-    )
+private val LightColorScheme = lightColorScheme(
+    primary = MetaBlue,
+    onPrimary = OnMetaBlue,
+    primaryContainer = MetaBlueLight,
+    onPrimaryContainer = OnMetaBlueLight,
+    secondary = NeutralGrey,
+    onSecondary = OnMetaBlue,
+    background = BackgroundLight,
+    surface = SurfaceLight,
+    onBackground = ContentOnLight,
+    onSurface = ContentOnLight,
+)
 
-private val DarkColorScheme =
-    darkColorScheme(
-        primary = MetaBlue,
-        onPrimary = OnMetaBlue,
-        primaryContainer = MetaBlueDarkCont,
-        onPrimaryContainer = OnMetaBlueDarkC,
-        secondary = NeutralGreyDark,
-        onSecondary = OnMetaBlue,
-        background = BackgroundDark,
-        surface = SurfaceDark,
-        onBackground = ContentOnDark,
-        onSurface = ContentOnDark,
-    )
+private val DarkColorScheme = darkColorScheme(
+    primary = MetaBlue,
+    onPrimary = OnMetaBlue,
+    primaryContainer = MetaBlueDarkCont,
+    onPrimaryContainer = OnMetaBlueDarkC,
+    secondary = NeutralGreyDark,
+    onSecondary = OnMetaBlue,
+    background = BackgroundDark,
+    surface = SurfaceDark,
+    onBackground = ContentOnDark,
+    onSurface = ContentOnDark,
+)
 
 @Composable
 fun SampleAppTheme(
