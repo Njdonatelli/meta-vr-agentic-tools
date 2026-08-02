@@ -81,7 +81,9 @@ fun CameraSection() {
           modifier = Modifier.heightIn(min = 52.dp),
       ) {
         Text(
-            stringResource(if (showPreview) R.string.btn_close_camera else R.string.btn_open_camera)
+            stringResource(
+                if (showPreview) R.string.btn_close_camera else R.string.btn_open_camera,
+            ),
         )
       }
 

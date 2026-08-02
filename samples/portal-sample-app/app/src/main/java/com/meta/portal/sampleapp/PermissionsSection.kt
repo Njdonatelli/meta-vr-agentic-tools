@@ -74,7 +74,7 @@ fun PermissionsSection() {
         isGranted(Manifest.permission.CAMERA) &&
             isGranted(Manifest.permission.ACCESS_FINE_LOCATION) &&
             isGranted(Manifest.permission.READ_CONTACTS) &&
-            isGranted(Manifest.permission.RECORD_AUDIO)
+            isGranted(Manifest.permission.RECORD_AUDIO),
     )
   }
   val multiLauncher =
@@ -106,7 +106,7 @@ fun PermissionsSection() {
             Manifest.permission.ACCESS_FINE_LOCATION,
             Manifest.permission.READ_CONTACTS,
             Manifest.permission.RECORD_AUDIO,
-        )
+        ),
     )
   }
 }

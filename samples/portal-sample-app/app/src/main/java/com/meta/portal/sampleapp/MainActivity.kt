@@ -43,10 +43,10 @@ class MainActivity : ComponentActivity() {
                   title = { Text(stringResource(R.string.title_ui_showcase)) },
                   colors =
                       TopAppBarDefaults.topAppBarColors(
-                          containerColor = MaterialTheme.colorScheme.primaryContainer
+                          containerColor = MaterialTheme.colorScheme.primaryContainer,
                       ),
               )
-            }
+            },
         ) { paddingValues ->
           ShowcaseScreen(modifier = Modifier.padding(paddingValues))
         }

@@ -79,7 +79,7 @@ fun AudioRecorderSection() {
                     AudioState.RECORDING -> R.string.audio_status_recording
                     AudioState.RECORDED -> R.string.audio_status_recorded
                     AudioState.PLAYING -> R.string.audio_status_playing
-                  }
+                  },
               ),
           modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
           style = MaterialTheme.typography.bodyMedium,
@@ -140,8 +140,8 @@ fun AudioRecorderSection() {
       ) {
         Text(
             stringResource(
-                if (audioState == AudioState.RECORDING) R.string.btn_stop else R.string.btn_record
-            )
+                if (audioState == AudioState.RECORDING) R.string.btn_stop else R.string.btn_record,
+            ),
         )
       }
 
@@ -176,8 +176,8 @@ fun AudioRecorderSection() {
       ) {
         Text(
             stringResource(
-                if (audioState == AudioState.PLAYING) R.string.btn_stop else R.string.btn_play
-            )
+                if (audioState == AudioState.PLAYING) R.string.btn_stop else R.string.btn_play,
+            ),
         )
       }
 
