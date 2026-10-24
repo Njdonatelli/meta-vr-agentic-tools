@@ -1,6 +1,6 @@
 ---
-name: Bug Report
-about: Report a problem with the sample app
+name: Portal sample app bug report
+about: Report a problem with samples/portal-sample-app
 labels: bug
 ---
 

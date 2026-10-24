@@ -7,7 +7,7 @@ A minimal Android app for building on discontinued Meta Portal touch and TV devi
 The **portal** skill is the easiest way to work with this project — it covers Portal hardware constraints, design requirements, toolchain setup, the build/deploy loop, and debugging. It runs on the Meta VR CLI. Pick the path that matches your setup:
 
 - **Already have the Meta VR CLI installed?** Just call the skill — `/read-skill portal` or mention Portal to your AI coding tool.
-- **Don't have it yet?** Get the **portal** skill from [agentic-tools](https://github.com/meta-quest/agentic-tools). The first time you use it, it auto-installs the Meta VR CLI for you.
+- **Don't have it yet?** The **portal** skill lives in this repository at [`skills/portal/`](../../skills/portal/SKILL.md) and installs with the rest of the Meta VR skills (see the [root README](../../README.md#installation)). The first time you use it, it auto-installs the Meta VR CLI for you.
 - **Don't want to use the Meta VR CLI?** It's required for the skill, so skip the skill — the rest of this file has everything you need to build and deploy manually.
 
 ## Project Structure

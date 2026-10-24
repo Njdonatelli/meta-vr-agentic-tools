@@ -6,7 +6,7 @@ A minimal Android application for Meta Portal touch and TV devices. This sample 
 
 The easiest way to get started is with the **portal** skill — it gives your AI coding tool full knowledge of Portal constraints, design requirements, and the build/deploy loop, so you can just describe what you want to build. The skill runs on the Meta VR CLI.
 
-- **Use the skill:** get the **portal** skill from [agentic-tools](https://github.com/meta-quest/agentic-tools). The first time you use it, it auto-installs the Meta VR CLI for you.
+- **Use the skill:** the **portal** skill lives in this repository at [`skills/portal/`](../../skills/portal/SKILL.md) and installs with the rest of the Meta VR skills (see the [root README](../../README.md#installation)). The first time you use it, it auto-installs the Meta VR CLI for you.
 - **Don't want the Meta VR CLI?** It's required for the skill, so build manually instead — see [Getting Started](#getting-started) below.
 
 ## Getting Started
@@ -50,4 +50,4 @@ Portal devices have specific design requirements due to their form factor (table
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This sample is licensed under the MIT License - see the [LICENSE](LICENSE) file in this directory. It is separate from the Apache 2.0 license that covers the rest of the repository.

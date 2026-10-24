@@ -1,14 +1,25 @@
-name: CI
+name: Portal sample app
 
+# GitHub only reads workflows from the repo root, so the sample's CI lives here
+# and is scoped to its directory to keep skill-only changes from paying for a Gradle build.
 on:
   push:
     branches: [main]
+    paths:
+      - 'samples/portal-sample-app/**'
+      - '.github/workflows/portal-sample-app.yml'
   pull_request:
     branches: [main]
+    paths:
+      - 'samples/portal-sample-app/**'
+      - '.github/workflows/portal-sample-app.yml'
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: samples/portal-sample-app
     steps:
       - uses: actions/checkout@v4
 
