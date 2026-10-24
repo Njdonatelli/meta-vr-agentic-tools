@@ -304,12 +304,15 @@ Run `metavr --help` or `metavr <group> --help` for full usage details.
 ├── .github/plugin/          # GitHub Copilot CLI plugin configuration
 │   ├── plugin.json          # Plugin metadata with skills paths
 │   └── marketplace.json     # Marketplace listing
+├── .github/workflows/       # CI for samples/ (path-filtered per sample)
 ├── .mcp.json                # Shared MCP server config used by supported clients
 ├── docs/
 │   └── metavr-cli.md        # Full metavr CLI reference
 ├── gemini-extension.json    # Gemini-compatible MCP configuration
 ├── skills/                  # One directory per skill
 │   └── ...
+├── samples/                 # Buildable sample apps (not installed by metavr)
+│   └── portal-sample-app/   # Android sample for Meta Portal devices (MIT)
 ├── LICENSE                  # Apache 2.0
 ├── AGENTS.md                # Agent navigation guide
 ├── CLAUDE.md                # Symlink → AGENTS.md
@@ -320,6 +323,14 @@ Run `metavr --help` or `metavr <group> --help` for full usage details.
 ```
 
 Each skill directory contains a `SKILL.md` file. Supporting directories such as `references/`, `scripts/`, `assets/`, `examples/`, and `agents/` are optional and will be used only when they materially help the skill.
+
+## Samples
+
+| Sample | Directory | Pairs with skill | License |
+|--------|-----------|------------------|---------|
+| Portal Sample App — Jetpack Compose app for Meta Portal touch and TV devices (UI controls, runtime permissions, CameraX preview, audio record/playback) | [`samples/portal-sample-app/`](samples/portal-sample-app/) | [`portal`](skills/portal/SKILL.md) | MIT |
+
+Samples are standalone projects: open or build them from their own directory. `metavr skills install` only reads `skills/`, so samples never ship to installed clients.
 
 ## Documentation map
 
@@ -339,6 +350,6 @@ This project follows the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.
 
 ## License
 
-Apache 2.0 — see [LICENSE](LICENSE) for details.
+Apache 2.0 — see [LICENSE](LICENSE) for details. Projects under `samples/` carry their own `LICENSE` file, which takes precedence for that directory.
 
 Copyright (c) 2026 Meta Platforms, Inc.

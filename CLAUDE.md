@@ -130,11 +130,14 @@ frontmatter first.
 ├── .codex-plugin/           # Codex plugin manifest
 ├── .agents/plugins/         # Codex / Open Plugins repo marketplace
 ├── .github/plugin/          # GitHub Copilot CLI plugin metadata
+├── .github/workflows/       # CI for samples/ (path-filtered per sample)
 ├── .mcp.json                # Shared MCP server configuration
 ├── docs/                    # Generated metavr CLI reference
 ├── gemini-extension.json    # Gemini extension manifest
 ├── skills/
 │   └── ...
+├── samples/                 # Standalone sample apps; each has its own AGENTS.md
+│   └── portal-sample-app/   # Android sample for Meta Portal devices (MIT)
 ├── AGENTS.md                # This file
 ├── CLAUDE.md                # Symlink → AGENTS.md
 ├── CODE_OF_CONDUCT.md
@@ -151,3 +154,4 @@ frontmatter first.
 - **References should be one level deep.** SKILL.md links to `references/*.md`. Reference files should not link to other reference files.
 - **Descriptions must be third-person.** Use "Analyzes..." not "Analyze...". Include "Meta VR" and "Horizon OS" in every skill description.
 - **Be concise.** Agents already know general programming concepts. Only document Meta VR-specific details, metavr commands, and platform-specific gotchas.
+- **Samples are not skills.** `samples/*` are standalone build projects. When working inside one, read its own `AGENTS.md` first and run its build from that directory. Skills must not link into `samples/` with relative paths: installed skills live in `~/.agents/skills` without the rest of the repo, so those links would not resolve.
